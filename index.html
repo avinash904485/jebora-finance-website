@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jebora Finance helps customers explore home loans, business loans and loan against property options in India.">
+  <title>Jebora Finance | Loan Assistance in India</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, sans-serif; color: #17243b; line-height: 1.6; }
+    header { background: #081b3a; color: white; padding: 18px 7%; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+    .brand { font-size: 25px; font-weight: 800; color: #e9c66b; }
+    nav a { color: white; text-decoration: none; margin-left: 18px; font-size: 14px; }
+    .hero { padding: 85px 7%; background: linear-gradient(120deg,#081b3a,#174b78); color: white; }
+    .hero h1 { font-size: clamp(34px,5vw,56px); line-height: 1.15; max-width: 700px; margin: 0 0 20px; }
+    .hero p { font-size: 18px; max-width: 620px; color: #e0e8f2; }
+    .btn { display: inline-block; background: #e9c66b; color: #081b3a; padding: 13px 22px; border-radius: 6px; font-weight: bold; text-decoration: none; margin-top: 15px; }
+    section { padding: 60px 7%; }
+    h2 { font-size: 32px; margin-top: 0; }
+    .muted { color: #65738a; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 20px; }
+    .card { padding: 24px; border: 1px solid #e1e7ef; border-radius: 12px; background: white; }
+    .card h3 { color: #123e68; }
+    .about { background: #f4f7fb; }
+    .contact { background: #081b3a; color: white; }
+    .contact a { color: #e9c66b; }
+    footer { padding: 25px 7%; background: #061329; color: #d5ddeb; font-size: 13px; }
+    @media(max-width:600px) { header { align-items: flex-start; } nav a { margin: 0 12px 0 0; display: inline-block; } .hero { padding-top: 55px; } section { padding: 42px 6%; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">JEBORA FINANCE</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero" id="home">
+      <h1>Finance Solutions for Your Next Big Step</h1>
+      <p>Explore loan options for your home, property or business with guidance throughout your loan journey.</p>
+      <a class="btn" href="#contact">Enquire Now</a>
+    </div>
+
+    <section id="services">
+      <h2>Our Loan Services</h2>
+      <p class="muted">Explore available financing options to suit your needs.</p>
+      <div class="cards">
+        <div class="card"><h3>Home Loan</h3><p>Explore financing options for purchasing or constructing your home, subject to lender eligibility.</p></div>
+        <div class="card"><h3>Loan Against Property</h3><p>Understand property-backed financing options offered by eligible lenders.</p></div>
+        <div class="card"><h3>Business Loan</h3><p>Explore financing options to support eligible business requirements.</p></div>
+        <div class="card"><h3>Personal Loan</h3><p>Learn about personal financing options and lender eligibility requirements.</p></div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h2>About Jebora Finance</h2>
+      <p>Jebora Finance aims to make exploring financial solutions simpler through clear information and customer-focused assistance.</p>
+      <p class="muted">Add your verified company address, business details and contact information before publishing.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Get in Touch</h2>
+      <p>Contact our team to discuss your financing enquiry.</p>
+      <p>Email: <a href="mailto:YOUR_EMAIL">YOUR_EMAIL</a></p>
+      <p>Phone: YOUR_PHONE</p>
+      <p class="muted">Replace the placeholders with your verified business contact details.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Jebora Finance. All rights reserved.</p>
+    <p>Loan approval, interest rates and final terms are determined by the respective lender. Services are subject to eligibility and applicable terms.</p>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
